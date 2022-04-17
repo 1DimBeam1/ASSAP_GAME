@@ -45,13 +45,39 @@ public class Hero : MonoBehaviour
     }
 
     public float jumpForce;
+    private int maxJump = 2;
+    private int numJump = 0;
 
     void Jump()
     {
-        if (onGround && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            Physics2D.IgnoreLayerCollision(7, 8, true);
+            Invoke("IgnoreOff",1f);
+        }
+
+        if (onGround && Input.GetKeyDown(KeyCode.Space) )
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            numJump++;
+            anim.SetInteger("numJump",numJump);
         }
+        else if (!onGround && numJump < maxJump && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            numJump++;
+            anim.SetInteger("numJump", numJump);
+        }
+        else if (onGround && numJump == maxJump) 
+        { 
+            numJump = 0;
+            anim.SetInteger("numJump", numJump);
+        }
+    }
+
+    void IgnoreOff()
+    {
+        Physics2D.IgnoreLayerCollision(7, 8, false);
     }
 
     public bool onGround;
@@ -61,6 +87,6 @@ public class Hero : MonoBehaviour
     void CheckingGround()
     {
         onGround = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, Ground);
-
+        anim.SetBool("onGround", onGround );
     }
 }

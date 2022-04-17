@@ -58,6 +58,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Hero.cs" />
     <Compile Include="Assets\Scripts\camera.cs" />
+    <Compile Include="Assets\Scripts\button_function.cs" />
+    <Compile Include="Assets\Scripts\Play_button.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
