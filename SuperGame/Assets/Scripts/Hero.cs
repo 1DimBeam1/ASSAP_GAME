@@ -20,6 +20,7 @@ public class Hero : MonoBehaviour
         Walk();
         Flick();
         Jump();
+        Dash(); 
         CheckingGround();
     }
 
@@ -42,6 +43,19 @@ public class Hero : MonoBehaviour
             transform.localScale *= new Vector2(-1, 1);
             flic = !flic;
         }
+    }
+
+    public int DashImpulse ;
+    void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.F) && Input.GetButton("Horizontal"))
+        {
+            rb.velocity = new Vector2(0, 0);
+            if (flic) { rb.AddForce(Vector2.left * DashImpulse); }
+            else {rb.AddForce(Vector2.right * DashImpulse); }
+        }
+        
+
     }
 
     public float jumpForce;

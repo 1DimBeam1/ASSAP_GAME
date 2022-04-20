@@ -207,7 +207,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 254101574}
-        m_TargetAssemblyTypeName: Play_button, Assembly-CSharp
+        m_TargetAssemblyTypeName: button_function, Assembly-CSharp
         m_MethodName: GoToGame
         m_Mode: 1
         m_Arguments:
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 254101572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bad84e2ae9f4a1f43ae3ec6cb0012afc, type: 3}
+  m_Script: {fileID: 11500000, guid: 10bd8eb6fc3944a4984d46b43ac58da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1269556613

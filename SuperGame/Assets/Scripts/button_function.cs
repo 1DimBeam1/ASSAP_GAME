@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class Play_button : MonoBehaviour
+public class button_function : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,6 +15,15 @@ public class Play_button : MonoBehaviour
     {
         SceneManager.LoadScene("SampleScene");
     }
-    // Update is called once per frame
-  
+   
+    public void QuitG()
+    {
+        Application.Quit();
+    }
+
+    public void ExitMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 }

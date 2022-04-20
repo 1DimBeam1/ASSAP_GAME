@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - EnemyScripts
     - Hero
+    - SkilsHero
     - button_function
     - camera
     Unity.2D.Animation.Editor.dll:
@@ -11,6 +13,7 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
+    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -70,18 +73,30 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 1856}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2252}
     - Class: 114
-      Script: {instanceID: 3088}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 4888}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 5382}
+      Script: {instanceID: 3338}
+    - Class: 114
+      Script: {instanceID: 3458}
+    - Class: 114
+      Script: {instanceID: 3696}
+    - Class: 114
+      Script: {instanceID: 4892}
+    - Class: 114
+      Script: {instanceID: 5350}
+    - Class: 114
+      Script: {instanceID: 5388}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -119,19 +134,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 2250}
+      Script: {instanceID: 2252}
     - Class: 114
-      Script: {instanceID: 2680}
+      Script: {instanceID: 2682}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2854}
     - Class: 114
-      Script: {instanceID: 3088}
+      Script: {instanceID: 3090}
     - Class: 114
-      Script: {instanceID: 3336}
+      Script: {instanceID: 3338}
     - Class: 114
-      Script: {instanceID: 3456}
+      Script: {instanceID: 3458}
     - Class: 114
-      Script: {instanceID: 30658}
+      Script: {instanceID: 5350}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -227,6 +242,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 064f89d9537a3b9502df8fa66ed86ff2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SkilsHero
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -415,6 +436,12 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
+      Hash: dbb0a7b7461c44101df31c40555e8a8d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyScripts
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -589,7 +616,7 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: 3c8fde4793c6d27f1a3eb8387ca5f2de
+      Hash: 7cb3b67235550d1420d725a00400c89e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Hero
@@ -629,6 +656,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: button_function
   - hash:
       serializedVersion: 2
       Hash: 65b3a3b9a7779d539ec75a3ceddebdba
@@ -671,18 +704,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: button_function
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Play_button
   platform: 19
   scenePathNames:
   - Assets/Scenes/menu.unity
