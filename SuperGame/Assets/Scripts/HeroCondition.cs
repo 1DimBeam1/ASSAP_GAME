@@ -5,20 +5,61 @@ using UnityEngine.SceneManagement;
 
 public class HeroCondition : MonoBehaviour
 {
-    public int HP = 100;
+    public int ST = 100;
+    public int curST;
 
+    public int HP = 100;
+    public int curHP;
+
+    private void Start()
+    {
+        curHP = HP;
+        curST = ST;
+    }
+    private void Update()
+    {
+        Tired();
+        Recovery();
+    }
     public void TakeDamage(int damage)
     {
-        HP -= damage;
+        curHP -= damage;
 
-        if (HP <= 0)
+        if (curHP <= 0)
         {
             Die();
         }
     }
 
+    public void GetTired(int tir)
+    {
+        curST -= tir;
+    }
     void Die()
     {
         SceneManager.LoadScene("SampleScene");
+    }
+
+    float delTm =0;
+    void Recovery()
+    {
+        if (tired)
+        {
+            delTm += Time.deltaTime;
+            if (delTm >= 0.5f)
+            {
+                curST += 5;
+                delTm = 0;
+            }
+        }
+    }
+    public bool tired;
+     void Tired()
+    {
+        if (curST <= 0)
+        {
+            tired = true;
+        }
+        else if (curST >= ST) { tired = false; }
     }
 }

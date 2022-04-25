@@ -6,7 +6,7 @@ public class Hero : MonoBehaviour
 {
     public Rigidbody2D rb;
     public Animator anim;
-
+    bool stamina;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +22,7 @@ public class Hero : MonoBehaviour
         Jump();
         Dash(); 
         CheckingGround();
+        stamina = GetComponent<HeroCondition>().tired;
     }
 
     public Vector2 moveVector;
@@ -46,15 +47,20 @@ public class Hero : MonoBehaviour
     }
 
     public int DashImpulse ;
+    bool dashOn;
     void Dash()
     {
-        if (Input.GetKeyDown(KeyCode.F) && Input.GetButton("Horizontal"))
+        if (Input.GetKeyDown(KeyCode.F) && Input.GetButton("Horizontal") && !stamina)
         {
+           anim.StopPlayback();
+            anim.Play("Dash");
+
             rb.velocity = new Vector2(0, 0);
             if (flic) { rb.AddForce(Vector2.left * DashImpulse); }
-            else {rb.AddForce(Vector2.right * DashImpulse); }
+            else { rb.AddForce(Vector2.right * DashImpulse); }
+            GetComponent<HeroCondition>().GetTired(25);
         }
-        
+        //rb.AddForce(Vector2.left * DashImpulse)
 
     }
 
@@ -64,9 +70,9 @@ public class Hero : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) )
         {
-            Physics2D.IgnoreLayerCollision(7, 8, true);
+            Physics2D.IgnoreLayerCollision(31, 7, true);
             Invoke("IgnoreOff",1f);
         }
 
@@ -91,7 +97,7 @@ public class Hero : MonoBehaviour
 
     void IgnoreOff()
     {
-        Physics2D.IgnoreLayerCollision(7, 8, false);
+        Physics2D.IgnoreLayerCollision(31, 7, false);
     }
 
     public bool onGround;
@@ -100,7 +106,10 @@ public class Hero : MonoBehaviour
     private float GroundCheckRadius;
     void CheckingGround()
     {
-        onGround = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, Ground);
-        anim.SetBool("onGround", onGround );
+        
+            onGround = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, Ground);
+            anim.SetBool("onGround", onGround);
+        
     }
+
 }

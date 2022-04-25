@@ -56,13 +56,16 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\STbar.cs" />
     <Compile Include="Assets\Scripts\SkilsHero.cs" />
+    <Compile Include="Assets\Scripts\EnemyCondition.cs" />
+    <Compile Include="Assets\Scripts\lader.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts.cs" />
     <Compile Include="Assets\Scripts\HeroCondition.cs" />
     <Compile Include="Assets\Scripts\Hero.cs" />
+    <Compile Include="Assets\Scripts\HPbar.cs" />
     <Compile Include="Assets\Scripts\button_function.cs" />
     <Compile Include="Assets\Scripts\camera.cs" />
-    <Compile Include="Assets\Scripts\EnemyCondition.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

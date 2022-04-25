@@ -24,6 +24,6 @@ public class button_function : MonoBehaviour
     public void ExitMenu()
     {
         SceneManager.LoadScene(0);
-    }
+     }
 
 }

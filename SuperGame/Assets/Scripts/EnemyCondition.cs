@@ -25,7 +25,7 @@ public class EnemyCondition : MonoBehaviour
     {
         Debug.Log(this.name + " died");
 
-        GetComponent<Collider2D>().enabled = false;
-        this.enabled = false;
+        Destroy(this.gameObject);
+
     }
 }

@@ -1,25 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - EnemyCondition
     - EnemyScripts
+    - HPbar
     - Hero
+    - HeroCondition
+    - STbar
     - SkilsHero
     - button_function
     - camera
+    - lader
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
-    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
-    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
-    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
@@ -37,6 +34,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
@@ -71,29 +69,41 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1516}
+      Script: {instanceID: 1462}
     - Class: 114
-      Script: {instanceID: 1856}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 2252}
+      Script: {instanceID: 1718}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 1858}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2006}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 2256}
     - Class: 114
-      Script: {instanceID: 3338}
+      Script: {instanceID: 2686}
     - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 3696}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 4892}
+      Script: {instanceID: 3342}
     - Class: 114
-      Script: {instanceID: 5350}
+      Script: {instanceID: 3462}
     - Class: 114
-      Script: {instanceID: 5388}
+      Script: {instanceID: 3624}
+    - Class: 114
+      Script: {instanceID: 3702}
+    - Class: 114
+      Script: {instanceID: 4692}
+    - Class: 114
+      Script: {instanceID: 4900}
+    - Class: 114
+      Script: {instanceID: 5280}
+    - Class: 114
+      Script: {instanceID: 5360}
+    - Class: 114
+      Script: {instanceID: 5398}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -132,21 +142,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1516}
+      Script: {instanceID: 1518}
     - Class: 114
-      Script: {instanceID: 2252}
+      Script: {instanceID: 2256}
     - Class: 114
-      Script: {instanceID: 2682}
+      Script: {instanceID: 2686}
     - Class: 114
-      Script: {instanceID: 2854}
+      Script: {instanceID: 2858}
     - Class: 114
-      Script: {instanceID: 3090}
+      Script: {instanceID: 3094}
     - Class: 114
-      Script: {instanceID: 3338}
+      Script: {instanceID: 3342}
     - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 3462}
     - Class: 114
-      Script: {instanceID: 5350}
+      Script: {instanceID: 5360}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -164,6 +174,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: 74edcb6c9fda0eab8f9a0aebea19db72
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: STbar
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -244,10 +260,16 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 064f89d9537a3b9502df8fa66ed86ff2
+      Hash: b35f34e401406368e13b7c13df609233
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SkilsHero
+  - hash:
+      serializedVersion: 2
+      Hash: dbb0a7b7461c44101df31c40555e8a8d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyCondition
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -430,13 +452,19 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 5d064456c40f7c34690dc0c9d079accc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: lader
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: dbb0a7b7461c44101df31c40555e8a8d
+      Hash: 7e2cedb79580d77050c4af0e71863d90
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemyScripts
@@ -574,6 +602,12 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
+      Hash: 0517502cbda48b1630f067b43fac9c82
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HeroCondition
+  - hash:
+      serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -650,6 +684,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: dc2eb151c17dadeacf9c45e558d128f8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HPbar
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d

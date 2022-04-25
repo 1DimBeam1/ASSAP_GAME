@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: ff8a765b3d9e99149918254c5f36b6e7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5209696024686105305
+    second: stamina-Sheet_0
+  - first:
+      213: -1744072297653014944
+    second: stamina-Sheet_1
+  - first:
+      213: -7458166101522805029
+    second: stamina-Sheet_2
+  - first:
+      213: 4942796553627850716
+    second: stamina-Sheet_3
+  - first:
+      213: 2933869316782815603
+    second: stamina-Sheet_4
+  - first:
+      213: 7564749889720733202
+    second: stamina-Sheet_5
+  - first:
+      213: -7597481697800722897
+    second: stamina-Sheet_6
+  - first:
+      213: 8774105574479833133
+    second: stamina-Sheet_7
+  - first:
+      213: -2159299984977600277
+    second: stamina-Sheet_8
+  - first:
+      213: 7954403071507607481
+    second: stamina-Sheet_9
+  - first:
+      213: -5897723144947243809
+    second: stamina-Sheet_10
+  - first:
+      213: 3996942455383941074
+    second: stamina-Sheet_11
+  - first:
+      213: -3082702201620130485
+    second: stamina-Sheet_12
+  - first:
+      213: -4536048492844749436
+    second: stamina-Sheet_13
+  - first:
+      213: -722593973688812247
+    second: stamina-Sheet_14
+  - first:
+      213: -6309406581778060529
+    second: stamina-Sheet_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +89,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +123,357 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: stamina-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2289
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d21e2baeee8c4840800000000000000
+      internalID: 5209696024686105305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 2139
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06eeacb5c7fcbc7e0800000000000000
+      internalID: -1744072297653014944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1989
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde8fda12754f7890800000000000000
+      internalID: -7458166101522805029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1839
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd753080747589440800000000000000
+      internalID: 4942796553627850716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1689
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379f14c699237b820800000000000000
+      internalID: 2933869316782815603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1539
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21eca77e1f36bf860800000000000000
+      internalID: 7564749889720733202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1389
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f266e0726a2509690800000000000000
+      internalID: -7597481697800722897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1239
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2825a46882e3c970800000000000000
+      internalID: 8774105574479833133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1089
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be067e7aa10a802e0800000000000000
+      internalID: -2159299984977600277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 939
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfac750377b36e60800000000000000
+      internalID: 7954403071507607481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 789
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4e1d11c04172ea0800000000000000
+      internalID: -5897723144947243809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 639
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df56d88cfdf77730800000000000000
+      internalID: 3996942455383941074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 489
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b451e143eaa0835d0800000000000000
+      internalID: -3082702201620130485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 339
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dea04cde7bc01c0800000000000000
+      internalID: -4536048492844749436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 189
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92db0710c94d8f5f0800000000000000
+      internalID: -722593973688812247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stamina-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 39
+        width: 742
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b6b9d742c7078a0800000000000000
+      internalID: -6309406581778060529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
