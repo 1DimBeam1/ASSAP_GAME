@@ -9,6 +9,7 @@ public class SkilsHero : MonoBehaviour
     public Transform attakPoint;
     public Transform rangeAtPoint;
     public float attakRange = 0.5f;
+    public float attakRangeTree = 0.5f;
     public LayerMask enemyLayers;
 
     public int swordDM = 20;
@@ -19,59 +20,51 @@ public class SkilsHero : MonoBehaviour
     }
     void Update()
     {
-        
-          Attak();
-       
+         Attak();
          TreeAttak();
-        
     }
 
-    bool justAttak;
+    bool attakOn = true;
     void Attak()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && attakOn)
         {
-            justAttak = true;
-            anim.SetBool("attakON", justAttak);
+            anim.StopPlayback();
+            anim.Play("StandartAttak");
+
             Collider2D hitEnemise = Physics2D.OverlapCircle(attakPoint.position, attakRange, enemyLayers);
             if (hitEnemise != null)
                 hitEnemise.GetComponent<EnemyCondition>().TakeDamage(swordDM);
-        }
-        else
-        {
-            justAttak = false;
-            anim.SetBool("attakON", justAttak);
+            attakOn = false;
+            Invoke("Att",0.4f); 
         }
     }
+    void Att()
+    {
+        attakOn = true;
+    }
 
-    bool treeAt ;
     void TreeAttak()
     {
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            treeAt = true;
-            anim.SetBool("TreeAttak", treeAt);
-            Collider2D hitEnemise = Physics2D.OverlapCircle(rangeAtPoint.position, attakRange, enemyLayers);
+
+            anim.StopPlayback();
+            anim.Play("TreeAttak");
+
+            Collider2D hitEnemise = Physics2D.OverlapCircle(rangeAtPoint.position, attakRangeTree, enemyLayers);
 
             if (hitEnemise != null)
                 hitEnemise.GetComponent<EnemyCondition>().TakeDamage(swordDM);
 
         }
-        else
-        {
-            treeAt = false;
-            anim.SetBool("TreeAttak", treeAt);
-        }     
-        
-
-        
     }
     private void OnDrawGizmosSelected()
     {
         if (attakPoint == null || rangeAtPoint == null)
             return;
         Gizmos.DrawWireSphere(attakPoint.position, attakRange);
-        Gizmos.DrawWireSphere(rangeAtPoint.position, attakRange);
+        Gizmos.DrawWireSphere(rangeAtPoint.position, attakRangeTree);
     }
 }

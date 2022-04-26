@@ -109,27 +109,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: atack_atlas_0
-      rect:
-        serializedVersion: 2
-        x: 3922
-        y: 2931
-        width: 88
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7bd51c3732186c630800000000000000
-      internalID: 3946984112702709175
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: atack_atlas_1
       rect:
         serializedVersion: 2
@@ -137,8 +116,8 @@ TextureImporter:
         y: 428
         width: 559
         height: 1361
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4824579, y: 0.53242165}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -154,12 +133,12 @@ TextureImporter:
       name: atack_atlas_2
       rect:
         serializedVersion: 2
-        x: 3688
-        y: 421
+        x: 3680
+        y: 413
         width: 1801
         height: 1639
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.32994446, y: 0.45085347}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,8 +158,8 @@ TextureImporter:
         y: 349
         width: 1736
         height: 1682
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.3480115, y: 0.4699578}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -196,12 +175,12 @@ TextureImporter:
       name: atack_atlas_5
       rect:
         serializedVersion: 2
-        x: 10001
+        x: 9996
         y: 340
         width: 1597
         height: 1061
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.30613858, y: 0.7511957}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -221,8 +200,8 @@ TextureImporter:
         y: 347
         width: 1508
         height: 1185
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.27073836, y: 0.6730715}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
