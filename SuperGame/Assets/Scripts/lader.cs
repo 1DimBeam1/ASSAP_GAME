@@ -5,6 +5,7 @@ using UnityEngine;
 public class lader : MonoBehaviour
 {
     Animator anim;
+    Animator animHr;
     bool on = false;
     private void Start()
     {
@@ -17,8 +18,10 @@ public class lader : MonoBehaviour
 
      void OnTriggerStay2D(Collider2D other)
     {
+        
         if (other.name == "Hero")
         {
+            animHr = other.GetComponent<Animator>();
             if (Input.GetKey(KeyCode.E))
             {
                 on = true;
@@ -30,10 +33,14 @@ public class lader : MonoBehaviour
                 if (Input.GetKey(KeyCode.W))
                 {
                     other.GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
+                    animHr.StopPlayback();
+                    animHr.Play("UpTree");
                 }
                 else if ((Input.GetKey(KeyCode.S)))
                 {
                     other.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -speed);
+                    animHr.StopPlayback();
+                    animHr.Play("UpTree");
                 }
                 else { other.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0); }
             }
@@ -44,15 +51,9 @@ public class lader : MonoBehaviour
     {
         if (other.name == "Hero")
         {
-            other.GetComponent<Rigidbody2D>().gravityScale = 5;
-            Invoke("Off",2f);
+            other.GetComponent<Rigidbody2D>().gravityScale = 2;
         }
     }
 
-    private void Off()
-    {
-        on = false;
-        anim.SetBool("ON", on);
-    }
 }
 
