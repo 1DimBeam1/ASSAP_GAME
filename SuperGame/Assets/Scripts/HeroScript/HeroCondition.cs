@@ -20,6 +20,7 @@ public class HeroCondition : MonoBehaviour
     {
         Tired();
         Recovery();
+        ExitGame();    
     }
     public void TakeDamage(int damage)
     {
@@ -62,5 +63,13 @@ public class HeroCondition : MonoBehaviour
             tired = true;
         }
         else if (curST >= ST) { tired = false; }
+    }
+
+    void ExitGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

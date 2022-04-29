@@ -6,14 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class button_function : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
     public void GoToGame()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(1);
     }
    
     public void QuitG()

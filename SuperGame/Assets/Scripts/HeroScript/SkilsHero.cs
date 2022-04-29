@@ -56,7 +56,7 @@ public class SkilsHero : MonoBehaviour
             Collider2D hitEnemise = Physics2D.OverlapCircle(rangeAtPoint.position, attakRangeTree, enemyLayers);
 
             if (hitEnemise != null)
-                hitEnemise.GetComponent<EnemyCondition>().TakeDamage(swordDM);
+                hitEnemise.GetComponent<EnemyCondition>().TakeDamage(50);
 
             GetComponent<HeroCondition>().GetTired(10);
         }

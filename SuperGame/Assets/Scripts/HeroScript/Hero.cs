@@ -18,14 +18,15 @@ public class Hero : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Walk();
-        Flick();
         Jump();
-        Dash(); 
+         Walk();
+        Dash();
+        Flick();
         CheckingGround();
         stamina = GetComponent<HeroCondition>().tired;
         curStami = GetComponent<HeroCondition>().curST;
     }
+
 
     public Vector2 moveVector;
     public float speed;

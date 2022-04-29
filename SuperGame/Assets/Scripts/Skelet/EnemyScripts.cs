@@ -30,29 +30,23 @@ public class EnemyScripts : MonoBehaviour
     }
 
     public int protectArea;
-    
+    float moveVector;
+    bool flicCl = true;
     void Chill()
     {
         if (!agro && home)
         {
             float distPoint = Vector2.Distance(transform.position, localPoint.position);
-
-            if (distPoint > protectArea )
+            moveVector = phys.velocity.x;
+            if (distPoint >= protectArea)
             {
-                phys.velocity = new Vector2 (0, 0);
-                phys.transform.localScale *= new Vector2(-1, 1);
+                if (moveVector > 0 && flicCl) { phys.transform.localScale *= new Vector2(-1, 1); flicCl = false; }
+                else if (moveVector < 0 && flicCl) { phys.transform.localScale *= new Vector2(-1, 1); flicCl = false; }
             }
-            
-            if (phys.transform.localScale.x > 0)
-            {
-                phys.velocity = new Vector2(-speed, 0);
-            }
-            else
-            {
-                phys.velocity = new Vector2(speed, 0);
-            }
-        }     
-
+            else { flicCl = true; }
+           
+            phys.velocity = new Vector2(-phys.transform.localScale.x * speed, 0);  
+        }
     }
 
     void Hunt()
@@ -63,16 +57,17 @@ public class EnemyScripts : MonoBehaviour
         {
             agro = true;
             home = false;
-            if (player.position.x < transform.position.x)
-            {
-                phys.velocity = new Vector2(-speed, 0);
-                transform.localScale = new Vector2(1, 1);
-            }
-            else 
-            { 
-                phys.velocity = new Vector2(speed, 0);
-                transform.localScale = new Vector2(-1, 1);
-            };
+            phys.velocity = new Vector2(-phys.transform.localScale.x * speed, 0);
+             if (player.position.x < transform.position.x)
+             {
+                 phys.velocity = new Vector2(-speed, 0);
+                 transform.localScale = new Vector2(1, 1);
+             }
+             else 
+             { 
+                 phys.velocity = new Vector2(speed, 0);
+                 transform.localScale = new Vector2(-1, 1);
+             };
 
         }
         else
@@ -81,21 +76,24 @@ public class EnemyScripts : MonoBehaviour
         }
     }
 
-    bool flip = true;
     void GoBack()
     {
         float distPoint = Vector2.Distance(transform.position, localPoint.position);
         if (!agro && !home)
         {
-            phys.velocity = new Vector2(-transform.localScale.x * speed, 0);
-            if (flip)
+
+            if (localPoint.position.x < transform.position.x)
             {
-                phys.transform.localScale *= new Vector2(-1, 1);
-                flip = false;
+                phys.velocity = new Vector2(-speed, 0);
+                transform.localScale = new Vector2(1, 1);
             }
+            else
+            {
+                phys.velocity = new Vector2(speed, 0);
+                transform.localScale = new Vector2(-1, 1);
+            };
 
         }
-        else {flip = true; }
         if (distPoint < protectArea)
         {
             home = true;
@@ -103,21 +101,14 @@ public class EnemyScripts : MonoBehaviour
     }
 
     public int damage = 50;
-    bool attakOn = true;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        if (other.name == "Hero" && attakOn)
-        {
+       if (other.CompareTag("Player"))
+       {
             anim.StopPlayback();
             anim.Play("SkeletAttak");
             other.GetComponent<HeroCondition>().TakeDamage(damage);
-            attakOn = false;
-            Invoke("AttakON", 1f);
         }
-    }
-   void AttakON()
-    {
-        attakOn = true;
     }
 }

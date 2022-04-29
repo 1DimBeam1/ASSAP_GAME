@@ -201,3 +201,5 @@ MonoBehaviour:
   agroDist: 3
   protectArea: 5
   damage: 10
+  attakRange: 0.92
+  attakPoint: {fileID: 0}

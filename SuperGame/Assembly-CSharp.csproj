@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\HeroScript\HPbar.cs" />
     <Compile Include="Assets\Scripts\button_function.cs" />
     <Compile Include="Assets\Scripts\HeroScript\camera.cs" />
+    <Compile Include="Assets\Scripts\RestartPoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
