@@ -5,7 +5,8 @@ using UnityEngine;
 public class EnemyCondition : MonoBehaviour
 {
     public int maxHP = 100;
-    int curHP;
+    public int curHP;
+    public Transform point;
     void Start()
     {
         curHP = maxHP;
@@ -23,9 +24,6 @@ public class EnemyCondition : MonoBehaviour
 
     void Die()
     {
-        Debug.Log(this.name + " died");
-
-        Destroy(this.gameObject);
-
+         Destroy(gameObject);
     }
 }

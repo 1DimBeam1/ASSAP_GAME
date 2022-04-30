@@ -22,7 +22,7 @@ public class lader : MonoBehaviour
         if (other.name == "Hero")
         {
             animHr = other.GetComponent<Animator>();
-            if (Input.GetKey(KeyCode.E))
+            if (Input.GetKey(KeyCode.E) && other.GetComponent<Hero>().RootsON)
             {
                 on = true;
                 anim.SetBool("ON", on);

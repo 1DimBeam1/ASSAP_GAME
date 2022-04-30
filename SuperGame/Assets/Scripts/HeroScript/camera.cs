@@ -19,6 +19,6 @@ public class camera : MonoBehaviour
     {
         pos = player.position;
         pos.z = -10f;
-        transform.position = Vector3.Lerp(transform.position, pos, Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, pos, 10*Time.deltaTime);
     }
 }

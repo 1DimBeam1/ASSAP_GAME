@@ -21,4 +21,8 @@ public class button_function : MonoBehaviour
         SceneManager.LoadScene(0);
      }
 
+    public void Lesson()
+    {
+        SceneManager.LoadScene("Lesson");
+    }
 }

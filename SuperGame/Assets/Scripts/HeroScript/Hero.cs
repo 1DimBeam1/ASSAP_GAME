@@ -8,11 +8,14 @@ public class Hero : MonoBehaviour
     public Animator anim;
     bool stamina;
     int curStami;
-    // Start is called before the first frame update
+
+    public bool RootsON;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         GroundCheckRadius = GroundCheck.GetComponent<CircleCollider2D>().radius;
+        RootsON = false;
     }
 
     // Update is called once per frame

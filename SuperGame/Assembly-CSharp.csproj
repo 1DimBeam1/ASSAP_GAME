@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\Wolf\WolfScript.cs" />
     <Compile Include="Assets\Scripts\HeroScript\SkilsHero.cs" />
     <Compile Include="Assets\Scripts\Skelet\EnemyCondition.cs" />
+    <Compile Include="Assets\Scripts\RestartPoint.cs" />
     <Compile Include="Assets\Scripts\lader.cs" />
     <Compile Include="Assets\Scripts\Skelet\EnemyScripts.cs" />
     <Compile Include="Assets\Scripts\HeroScript\HeroCondition.cs" />
@@ -68,7 +69,8 @@
     <Compile Include="Assets\Scripts\HeroScript\HPbar.cs" />
     <Compile Include="Assets\Scripts\button_function.cs" />
     <Compile Include="Assets\Scripts\HeroScript\camera.cs" />
-    <Compile Include="Assets\Scripts\RestartPoint.cs" />
+    <Compile Include="Assets\Scripts\Clover.cs" />
+    <Compile Include="Assets\Scripts\EnemyHpBAr.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

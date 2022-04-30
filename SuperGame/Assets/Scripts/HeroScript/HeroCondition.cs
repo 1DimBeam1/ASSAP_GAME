@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class HeroCondition : MonoBehaviour
 {
+    Animator anim;
+
     public int ST = 100;
     public int curST;
 
@@ -15,6 +17,7 @@ public class HeroCondition : MonoBehaviour
     {
         curHP = HP;
         curST = ST;
+        anim = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -38,10 +41,18 @@ public class HeroCondition : MonoBehaviour
     }
     void Die()
     {
+        anim.StopPlayback();
+        anim.Play("Died");
+        GetComponent<Hero>().enabled = false;
+        GetComponent<SkilsHero>().enabled = false;
 
-        SceneManager.LoadScene(1);
+        Invoke("Respawn",3f);
     }
 
+    void Respawn()
+    {
+        SceneManager.LoadScene(1);
+    }
     float delTm =0;
     void Recovery()
     {
@@ -50,7 +61,7 @@ public class HeroCondition : MonoBehaviour
             delTm += Time.deltaTime;
             if (delTm >= 0.5f)
             {
-                curST += 5;
+                curST += 10;
                 delTm = 0;
             }
         }
@@ -70,6 +81,11 @@ public class HeroCondition : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            SceneManager.LoadScene (1);
         }
     }
 }

@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: 3f0a3867e69d8c34c8af97dc598d9c27
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4097505250647815450
+    second: clover-Sheet_0
+  - first:
+      213: -6264334354480797163
+    second: clover-Sheet_1
+  - first:
+      213: 2168884328305630670
+    second: clover-Sheet_2
+  - first:
+      213: -2840487881685763969
+    second: clover-Sheet_3
+  - first:
+      213: 886633708198726444
+    second: clover-Sheet_4
+  - first:
+      213: -1206829638648512684
+    second: clover-Sheet_5
+  - first:
+      213: 3462235426389963115
+    second: clover-Sheet_6
+  - first:
+      213: 1926374084567518847
+    second: clover-Sheet_7
+  - first:
+      213: 3123918920492507294
+    second: clover-Sheet_8
+  - first:
+      213: 8204291076332096955
+    second: clover-Sheet_9
+  - first:
+      213: -8148331317424370241
+    second: clover-Sheet_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +74,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +108,252 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: clover-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 254
+        width: 335
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eac6dd1facb227c0800000000000000
+      internalID: -4097505250647815450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 254
+        width: 332
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a65ee281d9019a0800000000000000
+      internalID: -6264334354480797163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2554
+        y: 254
+        width: 335
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd919b2ecc691e10800000000000000
+      internalID: 2168884328305630670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 3612
+        y: 254
+        width: 336
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f787157325f8498d0800000000000000
+      internalID: -2840487881685763969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 4672
+        y: 254
+        width: 335
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b8217f8a4fd4c00800000000000000
+      internalID: 886633708198726444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 5731
+        y: 254
+        width: 335
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f31f376da704fe0800000000000000
+      internalID: -1206829638648512684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 6795
+        y: 254
+        width: 330
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b613fbec6c45c0030800000000000000
+      internalID: 3462235426389963115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 7854
+        y: 254
+        width: 335
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e4a27060bdbba10800000000000000
+      internalID: 1926374084567518847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 8913
+        y: 254
+        width: 336
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90e31bf4b36a5b20800000000000000
+      internalID: 3123918920492507294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 9972
+        y: 254
+        width: 336
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd8ea6044f7bd170800000000000000
+      internalID: 8204291076332096955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clover-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 11031
+        y: 254
+        width: 336
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdcab8a6df4bee80800000000000000
+      internalID: -8148331317424370241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
